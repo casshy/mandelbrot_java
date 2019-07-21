@@ -5,7 +5,7 @@ public class Mandelbrot {
 	/**
 	 * Compute Mandelbrot set
 	 */
-	public static int[][] compute(double size, int pixel, int div_threathold) {
+	public static int[][] compute(double size, int pixel, int div_threshold) {
 		int[][] result = new int[pixel][];
 		for(int i = 0; i < pixel; i++) {
 			result[i] = new int[pixel];
@@ -18,7 +18,7 @@ public class Mandelbrot {
 				double y = j * size / pixel - size / 2;
 				double a = 0;
 				double b = 0;
-				for(int k = 1; div_threathold >= k; k++) {
+				for(int k = 1; div_threshold >= k; k++) {
 					double _a = a * a - b * b + x;
 					double _b = 2 * a * b + y;
 					a = _a;

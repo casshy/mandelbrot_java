@@ -48,7 +48,7 @@ public class Main extends Application {
 			for(int j = 0; j < img.getHeight(); j++) {
 //				System.out.println(String.format("i:%d, j:%d, res:%d", i, j, result[j][i]));
 				
-				int argb1 = (255 << 24) | (255 << 16) | (0 << 8) | 255;
+				int argb1 = (255 << 24) | (128 << 16) | (128 << 8) | 255;
 				int argb2 = (255 << 24) | (255 << 16) | (255 << 8) | 0;
 				int black = (255 << 24) | (0 << 16) | (0 << 8) | 0;
 				if(result[j][i] > 0) {
